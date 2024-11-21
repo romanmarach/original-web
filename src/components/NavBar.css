@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    font-family: Open Arial, Helvetica, sans-serif;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -71,9 +72,10 @@
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
-  }
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
   
   .fa-bars {
     color: #fff;

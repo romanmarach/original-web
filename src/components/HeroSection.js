@@ -7,10 +7,10 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src="/waves1.mp4" autoPlay loop muted />
-      <h1>WELCOME</h1>
-      <p>.</p>
-      <div className='hero-btns'>
+      <video src="/v1.mp4" autoPlay loop muted />
+      <h1>Roman Marach </h1>
+      <h2>B.S. Computer Science | NJIT '25  </h2>
+      {/* <div className='hero-btns'> */}
         {/* <Button 
         className='btns' 
         buttonStyle='btn--outline'
@@ -19,17 +19,23 @@ function HeroSection() {
             LinkedIn
         </Button> */}
 
-        <Button 
+        {/* <Button 
         className='btns' 
         buttonStyle='btn--primary'
         buttonSize='btn--large'
         >
             Watch trailer <i className='far fa-play-circle' />
-        </Button>
+        </Button> */}
 
-
+      <div className='image-fade'>
+      {/* <img 
+                 src='self2.jpg' 
+                 className='testDiv'
+              
+                 /> */}
       </div>
-    </div>
+      </div>
+    // </div>
   )
 }
 

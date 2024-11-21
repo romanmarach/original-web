@@ -1,0 +1,33 @@
+.project-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    right: 10px;
+  }
+  

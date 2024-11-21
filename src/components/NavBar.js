@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './NavBar.css';
 import { Button } from "./Button";
 
+
 function NavBar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true)
@@ -45,7 +46,7 @@ function NavBar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/services'
+                  to='/aboutme'
                   className='nav-links'
                   onClick={closeMobileMenue}
                 >
@@ -54,7 +55,7 @@ function NavBar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/products'
+                  to='/projects'
                   className='nav-links'
                   onClick={closeMobileMenue}
                 >
@@ -62,15 +63,15 @@ function NavBar() {
                 </Link>
               </li>
   
-              <li>
+              {/* <li>
                 <Link
-                  to='/sign-up'
+                  to='/sign-up1'
                   className='nav-links-mobile'
                   onClick={closeMobileMenue}
                 >
                   Messege me
                 </Link>
-              </li>
+              </li> */}
             </ul>
             {button && <Button buttonStyle='btn--outline'>Messege</Button>}
           </div>

@@ -1,0 +1,38 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .project-card__image {
+    max-width: 30%;
+    border-radius: 10px;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0));
+  }
+  
+  .project-card__content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .project-card__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .project-card__description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

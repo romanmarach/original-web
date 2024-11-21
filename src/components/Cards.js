@@ -13,34 +13,29 @@ function Cards() {
               src='instagram.svg'
               text='Explore the hidden waterfall deep inside the Amazon Jungle'
               label='Adventure'
-              path='/services'
+              path='/aboutme'
             />
             <CardItem
-              src='images/img-2.jpg'
+              src='bali1.jpg'
               text='Travel through the Islands of Bali in a Private Cruise'
               label='Luxury'
-              path='/services'
+              path='/projects'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
+              src='matrix.webp'
               text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
               label='Mystery'
-              path='/services'
+              path='/aboutme'
             />
             <CardItem
-              src='images/img-4.jpg'
+              src='bg1.jpg'
               text='Experience Football on Top of the Himilayan Mountains'
               label='Adventure'
-              path='/products'
+              path='projects'
             />
-            <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
-            />
+          
           </ul>
         </div>
       </div>
