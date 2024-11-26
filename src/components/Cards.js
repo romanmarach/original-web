@@ -11,7 +11,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='instagram.svg'
-              text='Instagram Automation Bot.'
+              text='Instagram Automation Bot'
               label='Adventure'
               path='/aboutme'
             />
