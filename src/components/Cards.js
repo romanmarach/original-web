@@ -11,27 +11,27 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='instagram.svg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
+              text='Instagram Automation Bot.'
               label='Adventure'
               path='/aboutme'
             />
             <CardItem
-              src='bali1.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
+              src='/stonks.jpg'
+              text='LTSM stock prediction model'
               label='Luxury'
               path='/projects'
             />
           </ul>
           <ul className='cards__items'>
-            <CardItem
-              src='matrix.webp'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+            { <CardItem
+              src='snakeGame.webp'
+              text='Your childhood game'
               label='Mystery'
               path='/aboutme'
-            />
+            /> }
             <CardItem
-              src='bg1.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
+              src='matrix.webp'
+              text='Top secret project in the works...'
               label='Adventure'
               path='projects'
             />

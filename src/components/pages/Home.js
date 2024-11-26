@@ -8,10 +8,13 @@ import Footer from '../Footer';
         return (    
             <>
             <HeroSection />
+            <div id="cards-section">
             <Cards />
+            </div>
             <Footer />
             </>
         )
+        
     }
 
     export default Home;
