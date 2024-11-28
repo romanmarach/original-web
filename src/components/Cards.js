@@ -13,13 +13,13 @@ function Cards() {
               src='instagram.svg'
               text='Instagram Automation Bot'
               label='Adventure'
-              path='/aboutme'
+              path='/projects#instagram-bot'
             />
             <CardItem
               src='/stonks.jpg'
               text='LTSM stock prediction model'
               label='Luxury'
-              path='/projects'
+              path='/projects#stock-prediction'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,13 +27,13 @@ function Cards() {
               src='snakeGame.webp'
               text='Your childhood game'
               label='Mystery'
-              path='/aboutme'
+              path='/projects#snake-game'
             /> }
             <CardItem
               src='matrix.webp'
               text='Top secret project in the works...'
               label='Adventure'
-              path='projects'
+              path='projects#matrix'
             />
           
           </ul>

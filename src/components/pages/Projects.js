@@ -4,6 +4,7 @@ import HeroSection from '../HeroSection';
 import Cards from '../Cards';
 import ProjectCarousel from '../ProjectCarousel';
 import '../Projects.css';
+import Footer from '../Footer';
 
 
 function Projects() {
@@ -11,6 +12,7 @@ function Projects() {
       <div className="projects-page">
         <h1>My Projects</h1>
         <ProjectCarousel />
+        
       </div>
     );
   }

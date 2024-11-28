@@ -11,7 +11,7 @@ function Footer() {
             Thank you for stopping by
         </p>
         <p className='footer-subscription-text'>
-            bye bye
+            
         </p>
         <div className='input-area'>
             <form>
@@ -26,9 +26,9 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
-                <h2>about us</h2>
+                
                 <Link to='/sign-up'>how it works</Link>
-                <Link to='/'>Testamonials</Link>
+                <Link to='/'>About</Link>
             </div>
         </div>
         </div>
