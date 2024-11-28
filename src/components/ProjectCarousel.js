@@ -24,7 +24,7 @@ const projectData = [
   },
   {
     id: 'matrix',
-    title: 'Secret project',
+    title: 'Project currently being built',
     description: '....',
     image: '/matrix.webp',
   },

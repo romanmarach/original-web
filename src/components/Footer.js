@@ -7,9 +7,9 @@ function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscriotion'>
-        <p className='footer-subscription-heading'>
+        {/* <p className='footer-subscription-heading'>
             Thank you for stopping by
-        </p>
+        </p> */}
         <p className='footer-subscription-text'>
             
         </p>

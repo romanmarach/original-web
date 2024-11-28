@@ -21,7 +21,7 @@ function Aboutme() {
                     <p>
                     <strong>What I do:</strong> I bring my passion for software development to life through various personal coding projects, constantly exploring new ideas and honing my skills. My experience spans multiple programming languages, and I enjoy diving into the latest technologies to push the boundaries of what’s possible.
                     </p>
-                    <a href="#contact" className="contact-button">Contact me</a>
+                    <a href="/Messageme" className="contact-button">Contact me</a>
                 </div>
                 <div className="image">
                     <img src="/self.jpg" alt="About me" />
