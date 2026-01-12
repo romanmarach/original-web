@@ -242,3 +242,33 @@ html, body {
   padding:  20px 20px;
 }
 
+/* Mobile styles for About Me page */
+@media screen and (max-width: 768px) {
+  .about-me-section {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .image {
+    order: -1; /* Move image above text on mobile */
+    padding: 10px;
+  }
+
+  .image img {
+    max-width: 250px;
+  }
+}
+

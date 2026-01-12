@@ -7,7 +7,7 @@
     height: auto;
     margin: 20px auto;
   }
-  
+
   .arrow {
     background: none;
     border: none;
@@ -16,18 +16,50 @@
     padding: 10px;
     margin: 0 20px;
   }
-  
+
   .arrow:focus {
     outline: none;
   }
-  
+
   .left-arrow {
     position: absolute;
     left: 10px;
   }
-  
+
   .right-arrow {
     position: absolute;
     right: 10px;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .project-carousel {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+
+    .arrow {
+      position: static;
+      font-size: 1.5rem;
+      padding: 5px 15px;
+      margin: 10px 0;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      position: static;
+    }
+
+    .project-carousel {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Reorder: prev arrow, card, next arrow */
+    .left-arrow {
+      order: 1;
+    }
+
+    .right-arrow {
+      order: 3;
+    }
+  }
