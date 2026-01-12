@@ -24,7 +24,7 @@ function Aboutme() {
                     <a href="/Messageme" className="contact-button">Contact me</a>
                 </div>
                 <div className="image">
-                    <img src="/self.jpg" alt="About me" />
+                    <img src="/media/self.jpg" alt="About me" />
 
                     <div className="social-media-icons">
                     <a href="https://www.instagram.com/rvasylevych/" target="_blank" className="icon facebook" aria-label="Facebook">

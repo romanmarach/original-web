@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(move:*)",
+      "Bash(move bg1.jpg media )",
+      "Bash(move bg2.jpg media )",
+      "Bash(move igBotIcon.jpg media )",
+      "Bash(move instagram.svg media )",
+      "Bash(move m2.mp4 media )",
+      "Bash(move matrix.webp media )",
+      "Bash(move matrixVid.mp4 media )",
+      "Bash(move nb1.png media )",
+      "Bash(move self.jpg media )",
+      "Bash(move self2.jpg media )",
+      "Bash(move snakeGame.webp media )",
+      "Bash(move sqaures.mp4 media )",
+      "Bash(move stonks.jpg media )",
+      "Bash(move tech1.mp4 media )",
+      "Bash(move techHud.mp4 media )",
+      "Bash(move v1.mp4 media )",
+      "Bash(move waves1.mp4 media)"
+    ]
+  }
+}

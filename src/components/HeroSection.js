@@ -6,7 +6,7 @@ import "./HeroSection.css";
 function HeroSection() {
   return (
     <div className="hero-container">
-      <video src="/nn1.mp4" autoPlay loop muted />
+      <video src="/media/nn1.mp4" autoPlay loop muted />
       <h1>Roman Marach </h1>
       <h2>B.S. Computer Science | NJIT '25 </h2>
       {/* <div className='hero-btns'> */}
@@ -27,7 +27,7 @@ function HeroSection() {
         </Button> */}
 
       <div className="image-fade">
-        {<img src="njitlogo.png" className="testDiv" />}
+        {<img src="/media/njitlogo.png" className="testDiv" />}
       </div>
     </div>
     // </div>
