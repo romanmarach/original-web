@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import { Button } from "./Button";
 import "./HeroSection.css";
 
 function HeroSection() {
@@ -27,7 +26,7 @@ function HeroSection() {
         </Button> */}
 
       <div className="image-fade">
-        {<img src="/media/njitlogo.png" className="testDiv" />}
+        {<img src="/media/njitlogo.png" className="testDiv" alt="NJIT Logo" />}
       </div>
     </div>
     // </div>

@@ -1,7 +1,5 @@
 import React from 'react';
 import '../../App.css'
-import HeroSection from '../HeroSection';
-import Cards from '../Cards';
 import Footer from '../Footer';
 
 function Aboutme() {
@@ -27,13 +25,13 @@ function Aboutme() {
                     <img src="/media/self.jpg" alt="About me" />
 
                     <div className="social-media-icons">
-                    <a href="https://www.instagram.com/rvasylevych/" target="_blank" className="icon facebook" aria-label="Facebook">
+                    <a href="https://www.instagram.com/rvasylevych/" target="_blank" rel="noreferrer" className="icon facebook" aria-label="Instagram">
                         <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/roman-marach-96210b208/" target="_blank" className="icon linkedin" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/roman-marach-96210b208/" target="_blank" rel="noreferrer" className="icon linkedin" aria-label="LinkedIn">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com" target="_blank" className="icon github" aria-label="GitHub">
+                    <a href="https://github.com" target="_blank" rel="noreferrer" className="icon github" aria-label="GitHub">
                         <i className="fab fa-github"></i>
                     </a>
                 </div>
