@@ -1,0 +1,31 @@
+MOBILE ISSUES TO FIX - Next Session
+====================================
+
+1. GRAY BAR GAP (between navbar and hero video)
+   - There's a gray/white gap between the navbar and the hero video on mobile
+   - Likely a margin/padding issue on hero-container or body
+   - Check HeroSection.css and App.css
+
+2. VIDEO CONTROLS SHOWING ON iOS
+   - iOS shows native video controls when tapping the video
+   - Fix: Add playsInline attribute to the video tag in HeroSection.js
+   - Change: <video src="/media/nn1.mp4" autoPlay loop muted playsInline />
+
+3. NAVBAR CENTERING ON MOBILE
+   - Logo and hamburger menu are bunched together in the center
+   - Should be: logo on left, hamburger on right
+   - Fix in NavBar.css mobile media query
+
+4. TWO DIFFERENT DEPLOYMENTS
+   - rm1191.netlify.app and romanmarach.netlify.app look different
+   - Make sure deploying from the same branch (testingNew)
+
+====================================
+COMPLETED THIS SESSION
+====================================
+- Mobile responsive styles for hero, about, projects, navbar
+- Fixed ESLint errors for Netlify deployment
+- Organized media files into /public/media/ folder
+- Updated all image/video paths
+- Fixed hamburger menu centering and background scroll issue
+- Added Message button link to /messageme
