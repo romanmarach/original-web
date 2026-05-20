@@ -54,7 +54,7 @@ export const experience = [
   {
     role: "B.S. Computer Science",
     org: "New Jersey Institute of Technology",
-    period: "Graduated 2025",
+    period: "Graduated 2026",
     details:
       "Completed a broad CS curriculum with emphasis on software engineering, algorithms, and practical project delivery.",
   },

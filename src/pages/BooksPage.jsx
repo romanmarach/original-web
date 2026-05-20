@@ -150,8 +150,9 @@ function BooksPage() {
     <section className="section-shell py-14">
       <h1 className="font-display text-4xl text-white">Books</h1>
       <p className="mt-3 max-w-2xl text-gray-300">
-        What I am reading now, what I want to read next, and what I have
-        already finished.
+        Books that had a profound impact on either my worldview, my
+        understanding of the human condition, or simply left a lasting
+        impression on me.
       </p>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -179,7 +180,9 @@ function BooksPage() {
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
         <div className="space-y-6">
           <article className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-            <h2 className="font-display text-2xl text-white">Currently Reading</h2>
+            <h2 className="font-display text-2xl text-white">
+              Currently Reading
+            </h2>
             <ol className="mt-4 list-decimal space-y-2 pl-6 text-sm text-gray-200">
               {currentlyReading.map((book) => (
                 <li key={book}>{book}</li>
@@ -188,7 +191,9 @@ function BooksPage() {
           </article>
 
           <article className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-            <h2 className="font-display text-2xl text-white">Finished Reading</h2>
+            <h2 className="font-display text-2xl text-white">
+              Finished Reading
+            </h2>
             <ol className="mt-4 list-decimal space-y-2 pl-6 text-sm text-gray-200">
               {finishedReading.map((book) => (
                 <li key={book}>{book}</li>

@@ -12,8 +12,8 @@ function AboutPage() {
             document-processing apps, OCR pipelines, and practical web products.
             I like projects that take messy information and turn it into
             something clear, usable, and fast. Outside of software, I'm
-            interested in books, travel, sports, and building projects that
-            have real-world value.
+            interested in books, travel, sports, and building projects that have
+            real-world value.
           </p>
         </article>
 
@@ -32,7 +32,7 @@ function AboutPage() {
           <h3 className="mt-8 font-display text-xl text-white">Education</h3>
           <p className="mt-2 text-gray-300">
             B.S. in Computer Science, New Jersey Institute of Technology (NJIT),
-            2025.
+            2026.
           </p>
           <h3 className="mt-8 font-display text-xl text-white">Interests</h3>
           <p className="mt-2 text-gray-300">
