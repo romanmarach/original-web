@@ -4,7 +4,7 @@ const resumeProjects = [
     description:
       "A college financing web app that helps students compare loan paths and understand repayment tradeoffs with clearer outputs.",
     tech: ["React", "Vite", "UX Writing"],
-    image: "/media/loanFlick.png",
+    image: "/media/loanFlick2.png",
     imageFit: "contain",
     liveUrl: "https://loandecipher.netlify.app/",
   },
