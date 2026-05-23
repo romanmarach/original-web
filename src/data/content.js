@@ -24,17 +24,22 @@ export const projects = [
     liveUrl: "https://loandecipher.netlify.app/",
   },
   {
-    title: "Instagram Automation Bot",
+    title: "Cliffjumper App",
     summary:
-      "Automation toolkit built with Selenium for repetitive social workflows and controlled browser interaction.",
-    stack: ["Python", "Selenium", "Automation"],
-    image: "/media/igBotIcon2.webp",
+      "Android cliff-jumping discovery app with interactive maps, saved favorite spots, weather API integration, and safety metrics based on jump height and environmental conditions.",
+    stack: ["JavaScript", "Automation", "Workflow Design"],
+    image: "/media/cliffJumperimg1.png",
+    imageFit: "cover",
   },
 ];
 
 export const skills = [
   "JavaScript/TypeScript",
   "React",
+  "Leadership",
+  "Collaboration",
+  "Interpersonal Skills",
+  "Public Speaking",
   "Python",
   "Node.js",
   "REST APIs",
