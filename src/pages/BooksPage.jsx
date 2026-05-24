@@ -176,7 +176,7 @@ function BooksPage() {
       <div className="mb-10 border-b border-gold pb-6">
         <span className="eyebrow">03 / Books</span>
         <h1 className="font-display text-[clamp(36px,5vw,52px)] font-bold leading-tight text-paper">
-          What I'm <em className="text-gold not-italic">Reading</em>
+          Books that <em className="text-gold not-italic">Impacted</em> me
         </h1>
       </div>
 

@@ -1,13 +1,21 @@
 function ContactPage() {
   const contactLinks = [
-    { label: 'Email', value: 'romanmarach@ymail.com', href: 'mailto:romanmarach@ymail.com' },
     {
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/roman-marach',
-      href: 'https://www.linkedin.com/in/roman-marach',
+      label: "Email",
+      value: "romanmarach@ymail.com",
+      href: "mailto:romanmarach@ymail.com",
     },
-    { label: 'GitHub', value: 'github.com/romanmarach', href: 'https://github.com/romanmarach' },
-  ]
+    {
+      label: "LinkedIn",
+      value: "linkedin.com/in/roman1191",
+      href: "https://www.linkedin.com/in/roman1191",
+    },
+    {
+      label: "GitHub",
+      value: "github.com/romanmarach",
+      href: "https://github.com/romanmarach",
+    },
+  ];
 
   return (
     <section className="section-shell pb-20 pt-14">
@@ -20,8 +28,9 @@ function ContactPage() {
             something <em className="text-gold not-italic">real.</em>
           </h1>
           <p className="mb-10 max-w-[360px] text-sm leading-8 text-muted">
-            Open to full-time software engineering roles. Especially interested in teams building AI
-            tools, developer products, or anything that handles complexity well.
+            Open to full-time software engineering roles. Especially interested
+            in teams building automation tools, developer products, or anything
+            that handles complexity well.
           </p>
 
           <div className="flex flex-col">
@@ -48,12 +57,15 @@ function ContactPage() {
             Or send a message
           </span>
 
-          <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-5">
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="flex flex-col gap-5"
+          >
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {['First name', 'Last name'].map((ph) => (
+              {["First name", "Last name"].map((ph) => (
                 <div key={ph}>
                   <label className="mb-2 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
-                    {ph.split(' ')[0]}
+                    {ph.split(" ")[0]}
                   </label>
                   <input type="text" placeholder={ph} className="form-input" />
                 </div>
@@ -64,14 +76,22 @@ function ContactPage() {
               <label className="mb-2 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
                 Email
               </label>
-              <input type="email" placeholder="your@email.com" className="form-input" />
+              <input
+                type="email"
+                placeholder="your@email.com"
+                className="form-input"
+              />
             </div>
 
             <div>
               <label className="mb-2 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
                 Message
               </label>
-              <textarea rows={5} placeholder="What are you working on?" className="form-input resize-none" />
+              <textarea
+                rows={5}
+                placeholder="What are you working on?"
+                className="form-input resize-none"
+              />
             </div>
 
             <button type="submit" className="btn-gold self-start">
@@ -81,7 +101,7 @@ function ContactPage() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ContactPage
+export default ContactPage;

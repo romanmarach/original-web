@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { tags, projects } from '../data/content'
-import ProjectCard from '../components/ProjectCard'
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { tags, projects } from "../data/content";
+import ProjectCard from "../components/ProjectCard";
 
 function HomePage() {
   return (
@@ -14,7 +14,9 @@ function HomePage() {
           className="flex flex-col justify-between border-b border-gold p-8 lg:border-b-0 lg:border-r lg:p-10"
         >
           <div>
-            <span className="eyebrow">Software Developer - CS Graduate - NJIT '25</span>
+            <span className="eyebrow">
+              Software Developer - CS Graduate - NJIT '26
+            </span>
 
             <h1 className="mb-7 font-display text-[clamp(48px,8vw,84px)] font-bold leading-[0.95] tracking-[-0.02em] text-paper">
               Roman
@@ -23,8 +25,9 @@ function HomePage() {
             </h1>
 
             <p className="mb-5 max-w-[380px] text-sm leading-8 text-muted">
-              Building practical AI, automation, and web products. Focused on document pipelines,
-              OCR, and turning messy workflows into clean user experiences.
+              Building practical AI, automation, and web products. Focused on
+              document pipelines, OCR, and turning messy workflows into clean
+              user experiences.
             </p>
 
             <div className="flex flex-wrap gap-1.5">
@@ -61,14 +64,18 @@ function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-l from-black/20 via-black/35 to-black/55" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/20" />
             <div className="absolute bottom-4 left-4 font-mono text-[9px] uppercase tracking-[0.15em] text-paper/40">
-              Roman Marach - 2025
+              Roman Marach - 2026
             </div>
           </div>
 
           <div className="p-7 md:p-8">
             <span className="eyebrow mb-3">Featured Project</span>
-            <h3 className="mb-2 font-display text-2xl text-paper">{projects[0].title}</h3>
-            <p className="mb-3 max-w-[300px] text-xs leading-7 text-muted">{projects[0].summary}</p>
+            <h3 className="mb-2 font-display text-2xl text-paper">
+              {projects[0].title}
+            </h3>
+            <p className="mb-3 max-w-[300px] text-xs leading-7 text-muted">
+              {projects[0].summary}
+            </p>
             <div className="mb-4 flex flex-wrap gap-1.5">
               {projects[0].stack.map((t) => (
                 <span key={t} className="stack-pill">
@@ -113,8 +120,9 @@ function HomePage() {
               with <em className="text-gold not-italic">purpose.</em>
             </h2>
             <p className="max-w-[540px] text-sm leading-8 text-muted">
-              Focused on AI-assisted data handling, OCR pipelines, automation, and web products that
-              reduce manual work. Looking for full-time engineering roles.
+              Focused on AI-assisted data handling, OCR pipelines, automation,
+              and web products that reduce manual work. Looking for full-time
+              engineering roles.
             </p>
           </div>
           <Link to="/about" className="btn-ghost whitespace-nowrap">
@@ -123,7 +131,7 @@ function HomePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
