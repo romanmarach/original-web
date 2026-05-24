@@ -1,43 +1,42 @@
-import { Link } from 'react-router-dom'
-
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
   const hasLiveUrl = Boolean(project.liveUrl)
-  const imageFitClass = project.imageFit === 'contain' ? 'object-contain bg-slate-950 p-2' : 'object-cover'
+  const imageFitClass = project.imageFit === 'contain' ? 'object-contain p-2' : 'object-cover'
 
   return (
-    <article className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60">
-      <div className="aspect-[16/10] overflow-hidden">
-        <img
-          src={project.image}
-          alt={project.title}
-          className={`h-full w-full ${imageFitClass} transition duration-500 group-hover:scale-105`}
-        />
-      </div>
-      <div className="space-y-4 p-5">
-        <h3 className="font-display text-xl text-white">{project.title}</h3>
-        <p className="text-sm text-gray-300">{project.summary}</p>
-        <div className="flex flex-wrap gap-2">
-          {project.stack.map((tech) => (
-            <span key={tech} className="rounded-full border border-cyan-300/30 px-2 py-1 text-xs text-cyan-200">
-              {tech}
-            </span>
-          ))}
+    <article className="panel-gold card-hover p-6 md:p-7">
+      {project.image && (
+        <div className="mb-5 aspect-video overflow-hidden bg-white/5">
+          <img
+            src={project.image}
+            alt={project.title}
+            className={`h-full w-full transition duration-500 hover:scale-105 ${imageFitClass}`}
+          />
         </div>
-        {hasLiveUrl ? (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-sm font-semibold text-cyan-300 hover:text-cyan-200"
-          >
-            View Live Demo
-          </a>
-        ) : (
-          <Link to="/projects" className="inline-block text-sm font-semibold text-cyan-300 hover:text-cyan-200">
-            Explore Project
-          </Link>
-        )}
+      )}
+
+      <div className="mb-2 font-mono text-[10px] tracking-[0.15em] text-gold-dim">
+        {String(index + 1).padStart(2, '0')}
       </div>
+
+      <h3 className="mb-2 font-display text-2xl leading-tight text-paper">{project.title}</h3>
+
+      <p className="mb-4 text-[13px] leading-7 text-muted">
+        {project.summary || project.description}
+      </p>
+
+      <div className="mb-5 flex flex-wrap gap-1.5">
+        {(project.stack || project.tech || []).map((tech) => (
+          <span key={tech} className="stack-pill">{tech}</span>
+        ))}
+      </div>
+
+      {hasLiveUrl ? (
+        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="link-gold">
+          View Live -&gt;
+        </a>
+      ) : (
+        <span className="font-body text-[11px] uppercase tracking-[0.15em] text-gold-dim">In Progress</span>
+      )}
     </article>
   )
 }

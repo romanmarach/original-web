@@ -1,154 +1,143 @@
 const resumeProjects = [
   {
-    title: "University Loan Decoder",
+    title: 'University Loan Decoder',
     description:
-      "A college financing web app that helps students compare loan paths and understand repayment tradeoffs with clearer outputs.",
-    tech: ["React", "Vite", "UX Writing"],
-    image: "/media/loanFlick2.png",
-    imageFit: "contain",
-    liveUrl: "https://loandecipher.netlify.app/",
+      'A college financing web app that helps students compare loan paths and understand repayment tradeoffs with clearer outputs.',
+    tech: ['React', 'Vite', 'UX Writing'],
+    image: '/media/loanFlick.png',
+    imageFit: 'contain',
   },
   {
-    title: "Cliffjumper",
+    title: 'Cliffjumper',
     description:
-      "A practical software project focused on automation-first workflows and reducing repetitive operational steps.",
-    tech: ["JavaScript", "Automation", "Workflow Design"],
-    image: "/media/cliffJumperimg1.png",
-    imageFit: "cover",
+      'A practical software project focused on automation-first workflows and reducing repetitive operational steps.',
+    tech: ['JavaScript', 'Automation', 'Workflow Design'],
+    image: 'https://picsum.photos/900/550?random=741',
+    imageFit: 'cover',
   },
   {
-    title: "OCR / Automation Project",
+    title: 'Portfolio Website',
     description:
-      "Document-processing pipeline that extracts text from image/PDF input, normalizes fields, and outputs cleaner data for downstream use.",
-    tech: ["Python", "OCR", "Data Processing"],
-    image: "/media/ocrFlick.png",
-    imageFit: "cover",
+      'Personal site built to present real project work with clear structure, concise writing, and production-ready deployment.',
+    tech: ['React', 'Tailwind', 'Netlify'],
+    image: 'https://picsum.photos/900/550?random=742',
+    imageFit: 'cover',
   },
-];
+  {
+    title: 'OCR / Automation Project',
+    description:
+      'Document-processing pipeline that extracts text from image/PDF input, normalizes fields, and outputs cleaner data for downstream use.',
+    tech: ['Python', 'OCR', 'Data Processing'],
+    image: 'https://picsum.photos/900/550?random=743',
+    imageFit: 'cover',
+  },
+]
 
 const resumeExperience = [
   {
-    role: "Software Developer Intern",
-    org: "Wakefern",
-    period: "Recent",
+    role: 'Software Developer Intern',
+    org: 'Wakefern',
+    period: 'Recent',
     details:
-      "Contributed to internal software initiatives and workflow improvements with emphasis on reliability and maintainability.",
+      'Contributed to internal software initiatives and workflow improvements with emphasis on reliability and maintainability.',
   },
   {
-    role: "Help Desk / IT Support",
-    org: "Wakefern",
-    period: "Recent",
+    role: 'Help Desk / IT Support',
+    org: 'Wakefern',
+    period: 'Recent',
     details:
-      "Handled technical support requests, troubleshooting, and user-facing issue resolution across day-to-day operations.",
+      'Handled technical support requests, troubleshooting, and user-facing issue resolution across day-to-day operations.',
   },
   {
-    role: "Logistics Business Owner",
-    org: "Independent",
-    period: "Prior",
+    role: 'Logistics Business Owner',
+    org: 'Independent',
+    period: 'Prior',
     details:
-      "Ran logistics operations end-to-end, balancing execution, communication, and process discipline in fast-moving environments.",
+      'Ran logistics operations end-to-end, balancing execution, communication, and process discipline in fast-moving environments.',
   },
-];
+]
 
 function ResumePage() {
   return (
-    <section className="section-shell py-14">
-      <div className="rounded-3xl border border-white/10 bg-black/35 p-8">
-        <h1 className="font-display text-4xl text-white">
-          Resume & Experience
-        </h1>
-        <p className="mt-3 max-w-3xl text-gray-300">
-          Recent work with practical software projects and hands-on experience
-          across engineering, IT support, and operations.
-        </p>
+    <section className="section-shell pb-20 pt-14">
+      <div className="panel-gold mb-12 flex flex-col items-start justify-between gap-8 p-8 md:flex-row md:items-end md:p-10">
+        <div>
+          <span className="eyebrow">02 / Resume</span>
+          <h1 className="mb-3 font-display text-[clamp(32px,4vw,48px)] font-bold leading-tight text-paper">
+            Experience &amp; <em className="text-gold not-italic">Work</em>
+          </h1>
+          <p className="max-w-[480px] text-sm leading-8 text-muted">
+            Recent work with practical software projects and hands-on experience across engineering,
+            IT support, and operations.
+          </p>
+        </div>
         <a
           href="/resume/Resume5_26.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex rounded-full border border-cyan-300/50 px-5 py-2 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-cyan-100"
+          className="btn-gold whitespace-nowrap"
         >
-          View Full Resume PDF
+          Download PDF -&gt;
         </a>
       </div>
 
-      <div className="mt-12">
-        <h2 className="font-display text-3xl text-white">Projects</h2>
-        <p className="mt-2 max-w-2xl text-sm text-gray-300">
-          Selected project work most relevant to current software development
-          direction.
-        </p>
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          {resumeProjects.map((project) => (
-            <article
-              key={project.title}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-900/65 transition hover:-translate-y-0.5 hover:border-cyan-300/40"
-            >
-              <div className="aspect-[16/10] overflow-hidden bg-slate-950/80">
+      <div className="mb-12">
+        <div className="mb-0 border-b border-gold pb-5">
+          <h2 className="font-display text-[28px] font-bold text-paper">Projects</h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          {resumeProjects.map((project, i) => (
+            <article key={project.title} className="panel-gold card-hover overflow-hidden border-t-0">
+              <div className="aspect-video overflow-hidden bg-white/5">
                 <img
                   src={project.image}
-                  alt={`${project.title} screenshot`}
-                  className={`h-full w-full transition duration-500 group-hover:scale-[1.02] ${
-                    project.imageFit === "contain"
-                      ? "object-contain p-2"
-                      : "object-cover"
-                  }`}
+                  alt={project.title}
+                  className={`h-full w-full ${project.imageFit === 'contain' ? 'object-contain p-2' : 'object-cover'}`}
                 />
               </div>
-              <div className="space-y-4 p-5">
-                <h3 className="font-display text-xl text-white">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-gray-300">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-full border border-cyan-300/30 px-2 py-1 text-xs text-cyan-100"
-                    >
-                      {item}
+              <div className="p-6 md:p-7">
+                <div className="mb-2 font-mono text-[9px] tracking-[0.15em] text-gold-dim">
+                  {String(i + 1).padStart(2, '0')}
+                </div>
+                <h3 className="mb-2 font-display text-xl text-paper">{project.title}</h3>
+                <p className="mb-4 text-[13px] leading-7 text-muted">{project.description}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tech.map((t) => (
+                    <span key={t} className="stack-pill">
+                      {t}
                     </span>
                   ))}
                 </div>
-                {project.liveUrl ? (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-sm font-semibold text-cyan-300 hover:text-cyan-200"
-                  >
-                    View Live Demo
-                  </a>
-                ) : null}
               </div>
             </article>
           ))}
         </div>
       </div>
 
-      <div className="mt-12">
-        <h2 className="font-display text-3xl text-white">Experience</h2>
-        <div className="mt-6 grid gap-5">
-          {resumeExperience.map((item) => (
-            <article
-              key={`${item.role}-${item.org}`}
-              className="rounded-2xl border border-white/10 bg-black/25 p-6 transition hover:border-white/20"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-2">
-                <h3 className="font-display text-2xl text-white">
-                  {item.role}
-                </h3>
-                <span className="text-sm uppercase tracking-wider text-cyan-300">
-                  {item.period}
-                </span>
-              </div>
-              <p className="mt-1 text-gray-200">{item.org}</p>
-              <p className="mt-4 text-gray-300">{item.details}</p>
-            </article>
-          ))}
+      <div>
+        <div className="mb-0 border-b border-gold pb-5">
+          <h2 className="font-display text-[28px] font-bold text-paper">Experience</h2>
         </div>
+
+        {resumeExperience.map((item) => (
+          <article
+            key={`${item.role}-${item.org}`}
+            className="panel-gold card-hover grid grid-cols-1 gap-4 border-t-0 p-7 md:grid-cols-[1fr_auto] md:px-8"
+          >
+            <div>
+              <h3 className="mb-1 font-display text-[22px] font-bold text-paper">{item.role}</h3>
+              <div className="mb-3 font-display text-[13px] italic text-gold">{item.org}</div>
+              <p className="text-[13px] leading-7 text-muted">{item.details}</p>
+            </div>
+            <div className="pt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-gold-dim md:text-right">
+              {item.period}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
-  );
+  )
 }
 
-export default ResumePage;
+export default ResumePage

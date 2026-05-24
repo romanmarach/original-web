@@ -24,28 +24,27 @@ export const projects = [
     liveUrl: "https://loandecipher.netlify.app/",
   },
   {
-    title: "Cliffjumper App",
+    title: "Instagram Automation Bot",
     summary:
-      "Android cliff-jumping discovery app with interactive maps, saved favorite spots, weather API integration, and safety metrics based on jump height and environmental conditions.",
-    stack: ["JavaScript", "Automation", "Workflow Design"],
-    image: "/media/cliffJumperimg1.png",
-    imageFit: "cover",
+      "Automation toolkit built with Selenium for repetitive social workflows and controlled browser interaction.",
+    stack: ["Python", "Selenium", "Automation"],
+    image: "/media/igBotIcon2.webp",
   },
 ];
 
 export const skills = [
   "JavaScript/TypeScript",
   "React",
-  "Leadership",
-  "Collaboration",
-  "Interpersonal Skills",
-  "Public Speaking",
   "Python",
   "Node.js",
   "REST APIs",
   "SQL",
   "Git/GitHub",
   "Cloud Fundamentals",
+  "Public Speaking",
+  "Team Collaboration",
+  "Client Communication",
+  "Leadership",
 ];
 
 export const experience = [
@@ -59,7 +58,7 @@ export const experience = [
   {
     role: "B.S. Computer Science",
     org: "New Jersey Institute of Technology",
-    period: "Graduated 2026",
+    period: "Graduated 2025",
     details:
       "Completed a broad CS curriculum with emphasis on software engineering, algorithms, and practical project delivery.",
   },

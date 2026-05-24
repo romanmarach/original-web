@@ -1,80 +1,87 @@
 function ContactPage() {
+  const contactLinks = [
+    { label: 'Email', value: 'romanmarach@ymail.com', href: 'mailto:romanmarach@ymail.com' },
+    {
+      label: 'LinkedIn',
+      value: 'linkedin.com/in/roman-marach',
+      href: 'https://www.linkedin.com/in/roman-marach',
+    },
+    { label: 'GitHub', value: 'github.com/romanmarach', href: 'https://github.com/romanmarach' },
+  ]
+
   return (
-    <section className="section-shell py-14">
-      <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-black/40 p-8">
-        <h1 className="font-display text-4xl text-white">Contact</h1>
-        <p className="mt-3 text-gray-300">
-          Reach out for software roles, freelance builds, or collaboration on
-          practical AI, automation, and web products.
-        </p>
+    <section className="section-shell pb-20 pt-14">
+      <div className="panel-gold grid min-h-[500px] grid-cols-1 lg:grid-cols-2">
+        <div className="border-b border-gold p-8 lg:border-b-0 lg:border-r lg:p-10">
+          <span className="eyebrow">04 / Contact</span>
+          <h1 className="mb-5 font-display text-[clamp(32px,4vw,48px)] font-bold leading-tight text-paper">
+            Let's build
+            <br />
+            something <em className="text-gold not-italic">real.</em>
+          </h1>
+          <p className="mb-10 max-w-[360px] text-sm leading-8 text-muted">
+            Open to full-time software engineering roles. Especially interested in teams building AI
+            tools, developer products, or anything that handles complexity well.
+          </p>
 
-        <form className="mt-8 grid gap-4" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid gap-4 md:grid-cols-2">
-            <input
-              type="text"
-              placeholder="First name"
-              className="rounded-xl border border-white/20 bg-slate-900/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 focus:ring"
-            />
-            <input
-              type="text"
-              placeholder="Last name"
-              className="rounded-xl border border-white/20 bg-slate-900/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 focus:ring"
-            />
+          <div className="flex flex-col">
+            {contactLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="card-hover block border border-gold border-b-0 p-4 no-underline"
+              >
+                <span className="mb-1 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
+                  {link.label}
+                </span>
+                <span className="text-[13px] text-paper">{link.value}</span>
+              </a>
+            ))}
+            <div className="h-px border border-gold" />
           </div>
-          <input
-            type="email"
-            placeholder="Email"
-            className="rounded-xl border border-white/20 bg-slate-900/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 focus:ring"
-          />
-          <textarea
-            rows="5"
-            placeholder="Message"
-            className="rounded-xl border border-white/20 bg-slate-900/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 focus:ring"
-          />
-          <button
-            type="submit"
-            className="w-fit rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wider text-black transition hover:bg-gray-200"
-          >
-            Send Message
-          </button>
-        </form>
+        </div>
 
-        <div className="mt-8 space-y-2 text-sm text-gray-300">
-          <p>
-            Email:{" "}
-            <a
-              className="text-cyan-300 hover:text-cyan-200"
-              href="mailto:romanmarach@ymail.com"
-            >
-              romanmarach@ymail.com
-            </a>
-          </p>
-          <p>
-            LinkedIn:{" "}
-            <a
-              className="text-cyan-300 hover:text-cyan-200"
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/roman-marach
-            </a>
-          </p>
-          <p>
-            GitHub:{" "}
-            <a
-              className="text-cyan-300 hover:text-cyan-200"
-              href="https://github.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              github.com/romanmarach
-            </a>
-          </p>
+        <div className="p-8 lg:p-10">
+          <span className="mb-7 block font-mono text-[9px] uppercase tracking-[0.2em] text-gold-dim">
+            Or send a message
+          </span>
+
+          <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-5">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {['First name', 'Last name'].map((ph) => (
+                <div key={ph}>
+                  <label className="mb-2 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
+                    {ph.split(' ')[0]}
+                  </label>
+                  <input type="text" placeholder={ph} className="form-input" />
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <label className="mb-2 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
+                Email
+              </label>
+              <input type="email" placeholder="your@email.com" className="form-input" />
+            </div>
+
+            <div>
+              <label className="mb-2 block font-mono text-[9px] uppercase tracking-[0.18em] text-gold-dim">
+                Message
+              </label>
+              <textarea rows={5} placeholder="What are you working on?" className="form-input resize-none" />
+            </div>
+
+            <button type="submit" className="btn-gold self-start">
+              Send Message -&gt;
+            </button>
+          </form>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default ContactPage;
+export default ContactPage

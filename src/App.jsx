@@ -9,9 +9,9 @@ import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-mesh-dark">
+    <div className="min-h-screen" style={{ backgroundColor: '#0a0a0f' }}>
       <Navbar />
-      <main>
+      <main style={{ position: 'relative', zIndex: 1 }}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/books" element={<BooksPage />} />

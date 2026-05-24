@@ -7,20 +7,26 @@ function Navbar() {
     <motion.header
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur"
+      className="sticky top-0 z-50 border-b border-gold bg-[#0a0a0fd9] backdrop-blur-xl"
     >
-      <nav className="section-shell flex h-16 items-center justify-between">
-        <NavLink to="/" className="font-display text-sm tracking-[0.25em] text-white">
-          ROMAN
+      <nav className="section-shell flex min-h-16 flex-wrap items-center justify-between gap-2 py-2 md:py-0">
+        <NavLink
+          to="/"
+          className="font-display text-[17px] tracking-[0.04em] text-gold no-underline"
+        >
+          Roman Marach
         </NavLink>
-        <div className="flex gap-2 md:gap-4">
+
+        <div className="flex flex-wrap gap-1 md:gap-2">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `rounded-full px-3 py-1 text-xs uppercase tracking-wider transition ${
-                  isActive ? 'bg-white text-black' : 'text-gray-300 hover:text-white'
+                `px-3 py-1.5 font-body text-[10px] uppercase tracking-[0.18em] no-underline transition-colors ${
+                  isActive
+                    ? 'bg-gold font-bold text-ink'
+                    : 'text-muted-fg hover:text-paper'
                 }`
               }
             >

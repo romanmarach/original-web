@@ -4,20 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#08090D',
-        slate: '#111827',
-        steel: '#9CA3AF',
-        accent: '#22D3EE',
-      },
-      boxShadow: {
-        glow: '0 0 40px rgba(34, 211, 238, 0.18)',
+        ink: '#0a0a0f',
+        paper: '#f2f0eb',
+        gold: '#c8a96e',
+        'gold-dim': '#7a5f34',
+        rust: '#9b3a1e',
+        cream: '#e8e4db',
+        'muted-fg': '#6b6860',
       },
       fontFamily: {
-        display: ['Sora', 'system-ui', 'sans-serif'],
-        body: ['Manrope', 'system-ui', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        mono: ['"DM Mono"', 'monospace'],
+        body: ['Syne', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'mesh-dark': 'radial-gradient(circle at 20% 10%, rgba(34,211,238,0.18), transparent 40%), radial-gradient(circle at 80% 20%, rgba(148,163,184,0.15), transparent 35%), linear-gradient(180deg, #05060A 0%, #0B1020 100%)',
+        'ink-base': 'linear-gradient(135deg, #0a0a0f 0%, #0f0f18 100%)',
       },
     },
   },
