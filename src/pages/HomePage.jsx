@@ -56,8 +56,10 @@ function HomePage() {
             <img
               src="/media/self2.jpg"
               alt="Roman Marach"
-              className="block h-full w-full object-cover object-[center_top]"
+              className="block h-full w-full object-cover object-[56%_16%] lg:object-[58%_14%]"
             />
+            <div className="absolute inset-0 bg-gradient-to-l from-black/20 via-black/35 to-black/55" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/20" />
             <div className="absolute bottom-4 left-4 font-mono text-[9px] uppercase tracking-[0.15em] text-paper/40">
               Roman Marach - 2025
             </div>

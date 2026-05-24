@@ -52,7 +52,7 @@ function AboutPage() {
           <div className="mb-10 border-b border-gold pb-10">
             <span className="eyebrow">Education</span>
             <div className="mb-1 font-mono text-[10px] tracking-[0.1em] text-gold-dim">
-              2021 - 2025
+              2026
             </div>
             <div className="mb-1 font-display text-base text-paper">
               New Jersey Institute of Technology
@@ -63,7 +63,14 @@ function AboutPage() {
           <div>
             <span className="eyebrow">Interests</span>
             <div className="flex flex-wrap gap-1.5">
-              {["Books", "Travel", "Sports", "Product Design"].map((i) => (
+              {[
+                "Books",
+                "Martial arts",
+                "Computing",
+                "Cliff jumping",
+                "Product Design",
+                "Philosophy",
+              ].map((i) => (
                 <span key={i} className="chip">
                   {i}
                 </span>
